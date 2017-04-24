@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>农业大数据智能分析平台</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet" />
+	<link th:href="@{/css/unslider-dots.css}" rel="stylesheet" />
+	<link th:href="@{/css/unslider.css}" rel="stylesheet" />
+	<link th:href="@{/css/saved_resource.css}" rel="stylesheet" />
+	<script th:src="@{/js/jquery.js}"></script>
+	<script th:src="@{/js/unslider-min.js}"></script>
+	<script th:src="@{/js/mouseover.js}"></script>
+</head>
+<body>
+
+	<!-- Navbar -->
+	<div class="dsj_nav1_box" th:fragment="navBar">
+		<p class="logo_img">
+			<img th:src="@{/images/title.png}" alt="" />
+		</p>
+		<ul id="cd-primary-nav" class="cd-primary-nav">
+			<li class="has-children on"><a href="index.html">首页 </a>
+				<ul class="cd-secondary-nav is-hidden">
+				</ul></li>
+			<li class="has-children"><a href="@{/}">大数据资源池</a></li>
+			<li class="has-children"><a href="@{/}">大数据云服务</a></li>
+			<li class="has-children"><a href="@{/}">数据服务工具</a></li>
+			<li class="has-children"><a href="@{/}">解决方案</a></li>
+			<li class="has-children"><a href="@{/}">大数据分中心</a></li>
+		</ul>
+		<p class="zc_dl_button">
+			<button>登录</button>
+			<button class="active">注册</button>
+		</p>
+	</div>
+</body>
+</html>
