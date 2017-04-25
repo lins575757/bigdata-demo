@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>农业大数据智能分析平台</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+    <link th:href="@{/css/unslider-dots.css}" rel="stylesheet"/>
+    <link th:href="@{/css/unslider.css}" rel="stylesheet"/>
+    <link th:href="@{/css/saved_resource.css}" rel="stylesheet"/>
+    <script th:src="@{/js/jquery.js}"></script>
+    <script th:src="@{/js/unslider-min.js}"></script>
+    <script th:src="@{/js/mouseover.js}"></script>
+</head>
+
+<body>
+
+<div class="dsj_container">
+    <div class="dsj_nav1 clearfix">
+        <div class="dsj_nav1_box" th:include="/fragments/header :: navBar">
+        </div>
+    </div>
+    <div class="dsj_banner">
+        <div class="dsj_banner_box">
+            <div class="unslider" id="b06">
+                <div class="automatic-slider unslider-horizontal" style="position: relative; overflow: hidden;">
+                    <ul class="unslider-wrap unslider-carousel velocity-animating"
+                        style="width: 400%; left: -113.266%;">
+                        <li class="" style="width: 50%;position: relative;">
+                            <h6 class="scroll_text1">立足“互联网+农业大数据1</h6>
+                            <p class="scroll_text2">农业大数据平台全新上线</p>
+                            <img th:src="@{/images/bmp_banner_bg.png}" alt="" class="responsive"/>
+                        </li>
+                        <li class="" style="width: 50%;position: relative;">
+                            <h6 class="scroll_text1">立足“互联网+农业大数据2</h6>
+                            <p class="scroll_text2">农业大数据平台全新上线</p>
+                            <img th:src="@{/images/bmp_banner_bg.png}" alt="" class="responsive"/>
+                        </li>
+                        <li class="" style="width: 50%;position: relative;">
+                            <h6 class="scroll_text1">立足“互联网+农业大数据3</h6>
+                            <p class="scroll_text2">农业大数据平台全新上线</p>
+                            <img th:src="@{/images/bmp_banner_bg.png}" alt="" class="responsive"/>
+                        </li>
+                        <li class="" style="width: 50%;position: relative;">
+                            <h6 class="scroll_text1">立足“互联网+农业大数据4</h6>
+                            <p class="scroll_text2">农业大数据平台全新上线</p>
+                            <img th:src="@{/images/bmp_banner_bg.png}" alt="" class="responsive"/>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="unslider-nav">
+                    <ol></ol>
+                </nav>
+                <script>
+                    $('.automatic-slider').unslider({
+                        autoplay: true
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="dsj_nav2">
+        <ul>
+            <li>
+                <h6 class="text1">PB级数据资源</h6>
+                <p class="text2">六大数据资源池</p>
+            </li>
+            <li>
+                <h6 class="text1">精准数据服务</h6>
+                <p class="text2">个性化精准推送</p>
+            </li>
+            <li>
+                <h6 class="text1">立分行业领域</h6>
+                <p class="text2">针对不同领域要求</p>
+            </li>
+            <li>
+                <h6 class="text1">农业人工智能</h6>
+                <p class="text2">智能语音问答</p>
+            </li>
+            <li>
+                <h6 class="text1">海量专家知识资源</h6>
+                <p class="text2">实时在线专家服务</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 产品特性 -->
+    <div class="dsj_box1">
+        <h1 class="dsj_title1">产品特性</h1>
+        <div class="cptx_box">
+            <dl>
+
+                <dt><img th:src="@{/images/icon_img/icon7_1.png}" alt="" /></dt>
+                <dd>
+                    <h6>秒级创建</h6>
+                    <p>一键快速部署，秒级创建云资源</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon7_2.png}" alt="" /></dt>
+                <dd>
+                    <h6>万兆网络</h6>
+                    <p>10GB基础网络设定，内部高速互联</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon7_3.png}" alt="" /></dt>
+                <dd>
+                    <h6>实时监控</h6>
+                    <p>实时监控资源状态，自动告警规则</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon7_4.png}" alt="" /></dt>
+                <dd>
+                    <h6>弹性消费</h6>
+                    <p>按需计费，弹性伸缩，节省成本</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon7_5.png}" alt="" /></dt>
+                <dd>
+                    <h6>7*24小时</h6>
+                    <p>专业的7*27小时售后服务和技术支持</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon7_6.png}" alt="" /></dt>
+                <dd>
+                    <h6>CDN</h6>
+                    <p>动态负荷均衡，加快访问速度，预防网站遭受攻击</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon7_7.png}" alt="" /></dt>
+                <dd>
+                    <h6>SSD</h6>
+                    <p>SSD高速读写缓存，保证高IOPS的读写性能</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon7_8.png}" alt="" /></dt>
+                <dd>
+                    <h6>BGP</h6>
+                    <p>优质树中心，多线BGP骨干网络，南北网络互播</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon7_9.png}" alt="" /></dt>
+                <dd>
+                    <h6>SDN</h6>
+                    <p>软件定义网络，摆脱繁杂，用户间完全隔离</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon7_10.png}" alt="" /></dt>
+                <dd>
+                    <h6>API</h6>
+                    <p>提供所有资源操作的API接口，方便二次开发</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!-- 云特性 -->
+    <div class="dsj_box2">
+        <h1 class="dsj_title1">云特性</h1>
+        <div class="ytx_box">
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon8_1.png}" alt="" /></dt>
+                <dd>
+                    <h6>云主机</h6>
+                    <p>云端商业，数据梦想快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon8_2.png}" alt="" /></dt>
+                <dd>
+                    <h6>云存储</h6>
+                    <p>云端商业，数据梦想快速搭建平台，助力电商企业</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon8_3.png}" alt="" /></dt>
+                <dd>
+                    <h6>网络</h6>
+                    <p>云端商业，数据梦想快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon8_4.png}" alt="" /></dt>
+                <dd>
+                    <h6>云监控</h6>
+                    <p>云端商业，数据梦想快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon8_5.png}" alt="" /></dt>
+                <dd>
+                    <h6>防火墙</h6>
+                    <p>云端商业，数据梦想快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon8_6.png}" alt="" /></dt>
+                <dd>
+                    <h6>镜像</h6>
+                    <p>云端商业，数据梦想快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon8_7.png}" alt="" /></dt>
+                <dd>
+                    <h6>CND加速</h6>
+                    <p>云端商业，数据梦想快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img th:src="@{/images/icon_img/icon8_8.png}" alt="" /></dt>
+                <dd>
+                    <h6>云应用</h6>
+                    <p>云端商业，数据梦想快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!-- 应用中心 -->
+    <div class="dsj_box2">
+        <h1 class="dsj_title1">应用中心</h1>
+        <div class="application_centre">
+            <!--一个分类 开始-->
+            <div class="application_classify">
+                <i class="i1"></i>
+                <dl>
+                    <dt>17374名</dt>
+                    <dd>入库农业专家以及农业技术人员</dd>
+                </dl>
+            </div>
+            <!--一个分类 结束-->
+            <!--一个分类 开始-->
+            <div class="application_classify">
+                <i class="i2"></i>
+                <dl>
+                    <dt>8948台</dt>
+                    <dd>入库农业大型机械</dd>
+                </dl>
+            </div>
+            <!--一个分类 结束-->
+            <!--一个分类 开始-->
+            <div class="application_classify">
+                <i class="i3"></i>
+                <dl>
+                    <dt>7737个</dt>
+                    <dd>入库涉农企业</dd>
+                </dl>
+            </div>
+            <!--一个分类 结束-->
+            <!--一个分类 开始-->
+            <div class="application_classify">
+                <i class="i4"></i>
+                <dl>
+                    <dt>1424T</dt>
+                    <dd>农业遥感数据</dd>
+                </dl>
+            </div>
+            <!--一个分类 结束-->
+            <!--一个分类 开始-->
+            <div class="application_classify">
+                <i class="i4"></i>
+                <dl>
+                    <dt>1424T</dt>
+                    <dd>农业遥感数据</dd>
+                </dl>
+            </div>
+            <!--一个分类 结束-->
+        </div>
+        <div class="yyzx_box clearfix">
+            <!--推荐应用 开始-->
+            <div class="yyzx__left">
+                <div class="commend_title"><span>推荐应用</span></div>
+                <div class="commend_banner">
+                    <!--一个Banner 开始-->
+                    <div class="commend_banner_one">
+                        <div class="commend_banner_one_container color01">
+                            <div class="new"><img th:src="@{/images/icon_img/new.png}" /></div>
+                            <div class="new"><img th:src="@{/images/icon_img/new.png}" /></div>
+                            <i><img th:src="@{/images/icon_img/app01.jpg}" /></i>
+                            <dl>
+                                <dt>行业专家申请</dt>
+                                <dd>
+                                    <span>推荐指数：<img th:src="@{/images/icon_img/star05.png}" /></span>
+                                    <span>发布时间：2013-06-14</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--一个Banner 结束-->
+                    <!--一个Banner 开始-->
+                    <div class="commend_banner_one">
+                        <div class="commend_banner_one_container color02">
+                            <div class="new"><img th:src="@{/images/icon_img/new.png}" /></div>
+                            <i><img th:src="@{/images/icon_img/app02.jpg}" /></i>
+                            <dl>
+                                <dt>仪器供需发布</dt>
+                                <dd>
+                                    <span>推荐指数：<img th:src="@{/images/icon_img/star05.png}" /></span>
+                                    <span>发布时间：2013-06-14</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--一个Banner 结束-->
+                    <!--一个Banner 开始-->
+                    <div class="commend_banner_one">
+                        <div class="commend_banner_one_container color03">
+                            <i><img th:src="@{/images/icon_img/app03.jpg}" /></i>
+                            <dl>
+                                <dt>科技成果转化管理</dt>
+                                <dd>
+                                    <span>推荐指数：<img th:src="@{/images/icon_img/star05.png}" /></span>
+                                    <span>发布时间：2013-06-14</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--一个Banner 结束-->
+                    <!--一个Banner 开始-->
+                    <div class="commend_banner_one">
+                        <div class="commend_banner_one_container color02">
+                            <i><img th:src="@{/images/icon_img/app04.jpg}" /></i>
+                            <dl>
+                                <dt>农机调度</dt>
+                                <dd>
+                                    <span>推荐指数：<img th:src="@{/images/icon_img/star05.png}" /></span>
+                                    <span>发布时间：2013-06-14</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--一个Banner 结束-->
+                    <!--一个Banner 开始-->
+                    <div class="commend_banner_one">
+                        <div class="commend_banner_one_container color03">
+                            <i><img th:src="@{/images/icon_img/app05.jpg}" /></i>
+                            <dl>
+                                <dt>遥感大数据分析</dt>
+                                <dd>
+                                    <span>推荐指数：<img th:src="@{/images/icon_img/star05.png}" /></span>
+                                    <span>发布时间：2013-06-14</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--一个Banner 结束-->
+                    <!--一个Banner 开始-->
+                    <div class="commend_banner_one">
+                        <div class="commend_banner_one_container color01">
+                            <i><img th:src="@{/images/icon_img/app06.jpg}" /></i>
+                            <dl>
+                                <dt>物联网设备接口</dt>
+                                <dd>
+                                    <span>推荐指数：<img th:src="@{/images/icon_img/star05.png}" /></span>
+                                    <span>发布时间：2013-06-14</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--一个Banner 结束-->
+                    <!--一个Banner 开始-->
+                    <div class="commend_banner_one">
+                        <div class="commend_banner_one_container color03">
+                            <i><img th:src="@{/images/icon_img/app07.jpg}" /></i>
+                            <dl>
+                                <dt>农事活动报名</dt>
+                                <dd>
+                                    <span>推荐指数：<img th:src="@{/images/icon_img/star05.png}" /></span>
+                                    <span>发布时间：2013-06-14</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--一个Banner 结束-->
+                    <!--一个Banner 开始-->
+                    <div class="commend_banner_one">
+                        <div class="commend_banner_one_container color01">
+                            <i><img th:src="@{/images/icon_img/app08.jpg}" /></i>
+                            <dl>
+                                <dt>合作社数据定点观测</dt>
+                                <dd>
+                                    <span>推荐指数：<img th:src="@{/images/icon_img/star05.png}" /></span>
+                                    <span>发布时间：2013-06-14</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--一个Banner 结束-->
+                    <!--一个Banner 开始-->
+                    <div class="commend_banner_one">
+                        <div class="commend_banner_one_container color02">
+                            <i><img th:src="@{/images/icon_img/app09.jpg}" /></i>
+                            <dl>
+                                <dt>电商价格对比</dt>
+                                <dd>
+                                    <span>推荐指数：<img th:src="@{/images/icon_img/star05.png}" /></span>
+                                    <span>发布时间：2013-06-14</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--一个Banner 结束-->
+                </div>
+            </div>
+            <!--推荐应用 结束-->
+            <!--看看谁在用 开始-->
+            <div class="yyzx__right">
+                <div class="commend_title">看看谁在用</div>
+                <div class="person_used">
+                    <div class="person_used_img"><img th:src="@{/images/icon_img/person_img.png}" width="48" height="48" /></div>
+                    <dl class="person_used_ul">
+                        <dt>会员<font>何小明</font>于2016-03-24添加应用</dt>
+                        <dd>病虫害识别</dd>
+                    </dl>
+                </div>
+                <div class="person_used">
+                    <div class="person_used_img"><img th:src="@{/images/icon_img/person_img.png}" width="48" height="48" /></div>
+                    <dl class="person_used_ul">
+                        <dt>会员<font>何小明</font>于2016-03-24添加应用</dt>
+                        <dd>病虫害识别</dd>
+                    </dl>
+                </div>
+                <div class="person_used">
+                    <div class="person_used_img"><img th:src="@{/images/icon_img/person_img.png}" width="48" height="48" /></div>
+                    <dl class="person_used_ul">
+                        <dt>会员<font>何小明</font>于2016-03-24添加应用</dt>
+                        <dd>病虫害识别</dd>
+                    </dl>
+                </div>
+                <ul class="percent_ul">
+                    <li><img th:src="@{/images/icon_img/percent.jpg}" width="50" height="50" /></li>
+                    <li>
+                        <font class="f1">125个</font>
+                        已开发完成
+                    </li>
+                    <li>
+                        <font class="f2">125个</font>
+                        设计完成
+                    </li>
+                </ul>
+            </div>
+            <!--看看谁在用 结束-->
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="dsj_footer" th:include="/fragments/footer :: footer">
+    </div>
+
+</div>
+</body>
+</html>
+
+

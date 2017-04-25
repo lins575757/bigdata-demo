@@ -7,19 +7,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 解决方案控制器
+ * Created by lins on 2017/4/18.
+ */
+
 @Controller
-@RequestMapping(path = "/home")
-public class HomeController extends BaseController {
+@RequestMapping(value = "/solution")
+public class SolutionController extends BaseController {
 
     @Override
     public List<String> menu() {
         List<String> list = new ArrayList<>();
-        list.add("首页");
+        list.add("解决方案");
         return list;
     }
 
-    @GetMapping(path = {"/", "/index"})
-    public String home() {
-        return "/home/index";
+    @GetMapping("/index")
+    public String index() {
+        return "/solution/index";
     }
+
 }

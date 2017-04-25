@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>农业大数据智能分析平台</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+    <link th:href="@{/css/unslider-dots.css}" rel="stylesheet"/>
+    <link th:href="@{/css/unslider.css}" rel="stylesheet"/>
+    <link th:href="@{/css/saved_resource.css}" rel="stylesheet"/>
+    <script th:src="@{/js/jquery.js}"></script>
+    <script th:src="@{/js/unslider-min.js}"></script>
+    <script th:src="@{/js/mouseover.js}"></script>
+</head>
+
+<body>
+
+<div class="dsj_container">
+    <div class="dsj_nav1 clearfix">
+        <div class="dsj_nav1_box" th:include="/fragments/header :: navBar">
+        </div>
+    </div>
+    <div class="dsj_banner">
+        <div class="dsj_banner_box">
+            <div class="unslider" id="b06">
+                <div class="automatic-slider unslider-horizontal" style="position: relative; overflow: hidden;">
+                    <ul class="unslider-wrap unslider-carousel velocity-animating"
+                        style="width: 400%; left: -113.266%;">
+                        <li class="" style="width: 50%;position: relative;">
+                            <h6 class="scroll_text1">立足“互联网+农业大数据1</h6>
+                            <p class="scroll_text2">农业大数据平台全新上线</p>
+                            <img th:src="@{/images/bmp_banner_bg.png}" alt="" class="responsive"/>
+                        </li>
+                        <li class="" style="width: 50%;position: relative;">
+                            <h6 class="scroll_text1">立足“互联网+农业大数据2</h6>
+                            <p class="scroll_text2">农业大数据平台全新上线</p>
+                            <img th:src="@{/images/bmp_banner_bg.png}" alt="" class="responsive"/>
+                        </li>
+                        <li class="" style="width: 50%;position: relative;">
+                            <h6 class="scroll_text1">立足“互联网+农业大数据3</h6>
+                            <p class="scroll_text2">农业大数据平台全新上线</p>
+                            <img th:src="@{/images/bmp_banner_bg.png}" alt="" class="responsive"/>
+                        </li>
+                        <li class="" style="width: 50%;position: relative;">
+                            <h6 class="scroll_text1">立足“互联网+农业大数据4</h6>
+                            <p class="scroll_text2">农业大数据平台全新上线</p>
+                            <img th:src="@{/images/bmp_banner_bg.png}" alt="" class="responsive"/>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="unslider-nav">
+                    <ol></ol>
+                </nav>
+                <script>
+                    $('.automatic-slider').unslider({
+                        autoplay: true
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="dsj_nav2">
+        <ul>
+            <li>
+                <h6 class="text1">PB级数据资源</h6>
+                <p class="text2">六大数据资源池</p>
+            </li>
+            <li>
+                <h6 class="text1">精准数据服务</h6>
+                <p class="text2">个性化精准推送</p>
+            </li>
+            <li>
+                <h6 class="text1">立分行业领域</h6>
+                <p class="text2">针对不同领域要求</p>
+            </li>
+            <li>
+                <h6 class="text1">农业人工智能</h6>
+                <p class="text2">智能语音问答</p>
+            </li>
+            <li>
+                <h6 class="text1">海量专家知识资源</h6>
+                <p class="text2">实时在线专家服务</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 行业应用解决方案 -->
+    <div class="dsj_box1">
+        <h1 class="dsj_title1">行业应用解决方案</h1>
+        <div class="hyyy_jjfa_box">
+            <dl class="jjfa_list">
+                <dt><img th:src="@{/images/icon_img/icon4_1.png}" alt="" /></dt>
+                <dd>
+                    <h6>温室设施物联网监控解决方案</h6>
+                    <p>云端商业，数据梦想<br/>快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+            <dl class="jjfa_list">
+                <dt><img th:src="@{/images/icon_img/icon4_2.png}" alt="" /></dt>
+                <dd>
+                    <h6>大田水肥一体化解决方案</h6>
+                    <p>云端商业，数据梦想<br/>快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+            <dl class="jjfa_list">
+                <dt><img th:src="@{/images/icon_img/icon4_3.png}" alt="" /></dt>
+                <dd>
+                    <h6>奶牛现代化养殖解决方案</h6>
+                    <p>云端商业，数据梦想<br/>快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+            <dl class="jjfa_list">
+                <dt><img th:src="@{/images/icon_img/icon4_4.png}" alt="" /></dt>
+                <dd>
+                    <h6>林业智能化节水灌溉解决方案</h6>
+                    <p>云端商业，数据梦想<br/>快速搭建平台，助力电商企业实现</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <!-- 网络传输解决方案 -->
+    <div class="dsj_box2">
+        <h1 class="dsj_title1">网络传输解决方案</h1>
+        <div class="wlcs_jjfa_box">
+            <ul class="wlcs_jjfa_tit">
+                <li class="active"><a href="#">不同行业</a></li>
+                <li><a href="#">不同条件下</a></li>
+            </ul>
+            <div class="wlcs_jjfa_content">
+                <div class="wlcs_jjfa_list1">
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_1.png}" alt="" /></dt>
+                        <dd>
+                            <h6>物联网</h6>
+                            <p>安全稳定、全网互通<br/>大数据分析，共建物联网生态</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_2.png}" alt="" /></dt>
+                        <dd>
+                            <h6>农业金融</h6>
+                            <p>高弹性、高可用、安全<br/>合规，助推金融业务创新</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_3.png}" alt="" /></dt>
+                        <dd>
+                            <h6>农业电商</h6>
+                            <p>专业化云端业务与技术<br/>快速搭建标准或定制化平台</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_4.png}" alt="" /></dt>
+                        <dd>
+                            <h6>畜禽疾病预防</h6>
+                            <p>集合传统畜禽疾病预防优势<br/>致力构建智能医疗云生态</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_5.png}" alt="" /></dt>
+                        <dd>
+                            <h6>门户网站</h6>
+                            <p>构筑开放共享、敏捷高效<br/>安全可信的政务云基础架构</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_6.png}" alt="" /></dt>
+                        <dd>
+                            <h6>虚拟牧场</h6>
+                            <p>成熟的商业化云服务<br/>助力中小型游戏企业快速成长</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_7.png}" alt="" /></dt>
+                        <dd>
+                            <h6>设备接入</h6>
+                            <p>提供快速搭建一站式亿级设备<br/>接入、管理能力</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_8.png}" alt="" /></dt>
+                        <dd>
+                            <h6>视频培训</h6>
+                            <p>基于高性能基础架构，提供面<br/>向媒体行业的快速新</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_9.png}" alt="" /></dt>
+                        <dd>
+                            <h6>生物基因</h6>
+                            <p>快速搭建海量基因数据上传<br/>存储到分析挖掘的一体化</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_10.png}" alt="" /></dt>
+                        <dd>
+                            <h6>混合云</h6>
+                            <p>带给企业先进的大数据、云<br/>服务、安全可靠的互联网新技术</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_3.png}" alt="" /></dt>
+                        <dd>
+                            <h6>农业电商</h6>
+                            <p>结合各类O2O场景，提供并<br/>发</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_12.png}" alt="" /></dt>
+                        <dd>
+                            <h6>动物行为识别</h6>
+                            <p>整合视觉行业生态的力量<br/>提供多层次渲染服务</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="wlcs_jjfa_list2">
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_1.png}" alt="" /></dt>
+                        <dd>
+                            <h6>物联网222</h6>
+                            <p>安全稳定、全网互通<br/>大数据分析，共建物联网生态</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_2.png}" alt="" /></dt>
+                        <dd>
+                            <h6>农业金融</h6>
+                            <p>高弹性、高可用、安全<br/>合规，助推金融业务创新</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_3.png}" alt="" /></dt>
+                        <dd>
+                            <h6>农业电商</h6>
+                            <p>专业化云端业务与技术<br/>快速搭建标准或定制化平台</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_4.png}" alt="" /></dt>
+                        <dd>
+                            <h6>畜禽疾病预防</h6>
+                            <p>集合传统畜禽疾病预防优势<br/>致力构建智能医疗云生态</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_5.png}" alt="" /></dt>
+                        <dd>
+                            <h6>门户网站</h6>
+                            <p>构筑开放共享、敏捷高效<br/>安全可信的政务云基础架构</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_6.png}" alt="" /></dt>
+                        <dd>
+                            <h6>虚拟牧场</h6>
+                            <p>成熟的商业化云服务<br/>助力中小型游戏企业快速成长</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_7.png}" alt="" /></dt>
+                        <dd>
+                            <h6>设备接入</h6>
+                            <p>提供快速搭建一站式亿级设备<br/>接入、管理能力</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_8.png}" alt="" /></dt>
+                        <dd>
+                            <h6>视频培训</h6>
+                            <p>基于高性能基础架构，提供面<br/>向媒体行业的快速新</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_9.png}" alt="" /></dt>
+                        <dd>
+                            <h6>生物基因</h6>
+                            <p>快速搭建海量基因数据上传<br/>存储到分析挖掘的一体化</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_10.png}" alt="" /></dt>
+                        <dd>
+                            <h6>混合云</h6>
+                            <p>带给企业先进的大数据、云<br/>服务、安全可靠的互联网新技术</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_3.png}" alt="" /></dt>
+                        <dd>
+                            <h6>农业电商</h6>
+                            <p>结合各类O2O场景，提供并<br/>发</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img th:src="@{/images/icon_img/icon5_12.png}" alt="" /></dt>
+                        <dd>
+                            <h6>动物行为识别</h6>
+                            <p>整合视觉行业生态的力量<br/>提供多层次渲染服务</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="dsj_footer" th:include="/fragments/footer :: footer">
+    </div>
+
+</div>
+</body>
+</html>
+
